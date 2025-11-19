@@ -1,0 +1,71 @@
+# ---- Unity (6000.x.x / 2022+ Compatible) ----
+
+# Unity generated folders
+[Ll]ibrary/
+[Tt]emp/
+[Bb]uild/
+[Bb]uilds/
+[Oo]bj/
+[Ss]ysroots/
+UserSettings/
+MemoryCaptures/
+Logs/
+
+# Unity Cache
+.gradle/
+.ipynb_checkpoints/
+.apt_generated/
+.mdt/
+.wlt/
+.wbt/
+.vs/
+
+# Rider / VSCode / IDEs
+.vscode/
+.idea/
+*.csproj
+*.sln
+*.slnx
+*.unityproj
+
+# TextMesh Pro
+[Tt][Mm][Pp]/
+
+# Auto-generated
+*.pidb
+*.booproj
+*.db
+*.mdb
+*.pdb
+*.opendb
+*.VC.db
+*.pidb.meta
+*.mdb.meta
+*.pdb.meta
+
+# Builds
+*.apk
+*.aab
+*.app
+*.xcodeproj/
+*.xcworkspace/
+
+# Crash and temporary files
+*.stackdump
+*.tmp
+*.temp
+*.swp
+*.bak
+
+# Cache for package manager
+Assets/AssetStoreTools*
+
+# Plastic / Collaborate (se você NÃO usa)
+.collabignore
+.collab/
+PlasticSCM/
+.plastic/
+
+# OS specific
+.DS_Store
+Thumbs.db
