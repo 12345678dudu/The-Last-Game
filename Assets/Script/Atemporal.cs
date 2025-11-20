@@ -174,7 +174,7 @@ public class Atemporal : MonoBehaviour
             tempoCorrida = 0;
         }
 
-        if (coll.CompareTag("Player"))
+        if (coll.CompareTag("PlayerOriginal"))
         {
              HudInimigo.vidaPerdidas += jogador.danoJogador;
         }

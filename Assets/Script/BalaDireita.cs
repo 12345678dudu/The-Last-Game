@@ -18,7 +18,7 @@ public class BalaDireita : MonoBehaviour
     }
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("PlayerOriginal"))
+        if (other.CompareTag("Player"))
             Destroy(gameObject);
     }
 }

@@ -1464,6 +1464,8 @@ SpriteRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -1485,6 +1487,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
@@ -2527,12 +2530,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d00780e136a2f04bbe08f956b77342f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefab:
-  - {fileID: 7063731575822572785, guid: 1b7d6d2e1ca8b3348900831409d4b11d, type: 3}
-  spawPrefab:
-  - {fileID: 878334086}
-  spawnMax: 10
-  spawnMin: 1
+  prefab: {fileID: 7063731575822572785, guid: 1b7d6d2e1ca8b3348900831409d4b11d, type: 3}
+  spawPrefab: {fileID: 878334086}
+  spawnTime: 3
 --- !u!1 &1710926528
 GameObject:
   m_ObjectHideFlags: 0
@@ -3040,6 +3040,8 @@ SpriteRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -3061,6 +3063,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
@@ -3455,6 +3458,8 @@ SpriteRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -3476,6 +3481,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 6
@@ -3522,7 +3528,7 @@ GameObject:
   - component: {fileID: 2075948907}
   m_Layer: 0
   m_Name: Jogador
-  m_TagString: PlayerOriginal
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3574,6 +3580,8 @@ SpriteRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -3595,6 +3603,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
@@ -3642,7 +3651,6 @@ MonoBehaviour:
   velocidade: 5
   horizontal: 0
   bico: {fileID: 2130786838}
-  estaAtaque: 0
   audioClip:
   - {fileID: 8300000, guid: 9b14336b47ecd8b4aad0f17677cac0b0, type: 3}
   - {fileID: 8300000, guid: 809eaca06c02acc41ad89dd28462415d, type: 3}
@@ -3654,10 +3662,7 @@ MonoBehaviour:
   checaChao:
     serializedVersion: 2
     m_Bits: 8
-  inimigoAereo: {fileID: 2645898575674789440, guid: 1b7d6d2e1ca8b3348900831409d4b11d, type: 3}
   jardelas: {fileID: 3585296656783278773, guid: ce759732f7b821242b5df05ef90a0e8d, type: 3}
-  patrulha: {fileID: 0}
-  bala: {fileID: 2630725063891519513, guid: 3064256e9060697428de8769da0e050c, type: 3}
 --- !u!95 &2075948905
 Animator:
   serializedVersion: 7
@@ -3823,11 +3828,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2130786839}
-  - component: {fileID: 2130786841}
   - component: {fileID: 2130786842}
   m_Layer: 0
   m_Name: Bico
-  m_TagString: Player
+  m_TagString: PlayerOriginal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3847,18 +3851,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2075948903}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2130786841
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2130786838}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ab9af7b2fecb9c0408f8c117a39d6419, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!70 &2130786842
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

@@ -35,16 +35,16 @@ public class Corda : MonoBehaviour
         }
     }
 
-    void OnCollisionEnter2D(Collision2D col)
+    void OnTriggerEnter2D(Collider2D col)
     {
         // Se não pode grudar ainda → ignora
         if (!podeGrudar)
             return;
 
         // Se colidiu com um segmento da corda
-        if (col.collider.CompareTag(ropeTag))
+        if (col.CompareTag(ropeTag))
         {
-            Rigidbody2D segmentRB = col.collider.attachedRigidbody;
+            Rigidbody2D segmentRB = col.attachedRigidbody;
             if (segmentRB != null)
             {
                 Grudar(segmentRB);

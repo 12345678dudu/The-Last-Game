@@ -17,7 +17,7 @@ public class BalaAerea : MonoBehaviour
     }
 void OnTriggerEnter2D(Collider2D collision)
 {
-    if (collision.CompareTag("Chão") || collision.CompareTag("PlayerOriginal"))
+    if (collision.CompareTag("Chão") || collision.CompareTag("Player"))
     {
         if (jaColidiu) return;
         jaColidiu = true;

@@ -22,14 +22,19 @@ public class NuzzpikKershek : MonoBehaviour
     [SerializeField] private float forcaPulo;
     public float quantidadeMaxPulo;
     private float quantidadePulo;
+    public float puloMin = 6f;           // pulo fraco
+public float puloMax = 14f;          // pulo forte
+public float tempoMaxPressionado = 0.3f; // tempo até atingir força máxima
+
+private float tempoPressionado = 0f;
+private bool carregandoPulo = false;
 
     [Header("Detecção do Chão")]
     [SerializeField] private bool noChao;
     public Transform encostandoChao;
     public float areaChecaChao;
     public LayerMask checaChao;
-
-public Vida vida;
+    public Vida vida;
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -54,19 +59,33 @@ public Vida vida;
     }
 
     void Pulo()
+    {if (Input.GetKeyDown(KeyCode.Space) && quantidadePulo > 0)
     {
-        if (Input.GetKeyDown(KeyCode.Space) && quantidadePulo > 0)
-        {
-            quantidadePulo--;
-            rb.linearVelocity = new Vector2(rb.linearVelocity.x, 0f);
-            rb.AddForce(Vector2.up * forcaPulo, ForceMode2D.Impulse);
-            AudioManager(0);
-            ultimoPuloPos = transform.position;
-            pulouAgora = true;
-        }
+        carregandoPulo = true;
+        tempoPressionado = 0f;
+    }
+
+    // Segurando: acumula força do pulo
+    if (Input.GetKey(KeyCode.Space) && carregandoPulo)
+    {
+        tempoPressionado += Time.deltaTime;
+    }
+    if (Input.GetKeyUp(KeyCode.Space) && carregandoPulo)
+    {
+        quantidadePulo--;
+        float t = Mathf.Clamp01(tempoPressionado / tempoMaxPressionado);
+        float forcaFinal = Mathf.Lerp(puloMin, puloMax, t);
+        rb.linearVelocity = new Vector2(rb.linearVelocity.x, 0f);
+        rb.AddForce(Vector2.up * forcaFinal, ForceMode2D.Impulse);
+        AudioManager(0);
+        ultimoPuloPos = transform.position;
+        pulouAgora = true;
+
+        carregandoPulo = false;
+    }
 
         // Controla a queda mais leve segurando tecla E
-        rb.gravityScale = Input.GetKey(KeyCode.L) && rb.linearVelocity.y < 0 ? 0.3f : 1.5f;
+        rb.gravityScale = Input.GetKey(KeyCode.L) && rb.linearVelocity.y < 0 ? 0.5f : 1.5f;
     }
 
     void Deteccao()
@@ -120,9 +139,7 @@ public Vida vida;
         }
         if (other.CompareTag("Kershek"))
         {
-            print("dudu");
             Vida.vidaPerdida += other.gameObject.GetComponent<Kershek>().danos;
-            AudioManager(1);
             if (Vida.vidaPerdida > 0)
             {
                 StartCoroutine(TomarDano());
@@ -141,9 +158,18 @@ public Vida vida;
                 velocidade = velocidade - 0.5f;
             }
         }
-        if(other.CompareTag("Agua"))
+        if (other.CompareTag("Agua"))
         {
-            Vida.vidaPerdida += vida.vidaTotal;
+            Vida.vidaPerdida -= vida.vidaTotal;
+        }
+        if(other.CompareTag("Bala"))
+        {
+              Vida.vidaPerdida += other.gameObject.GetComponent<BalaDireita>().dano;
+            AudioManager(1);
+            if (Vida.vidaPerdida > 0)
+            {
+                StartCoroutine(TomarDano());
+            }
         }
 
     }
@@ -151,7 +177,7 @@ public Vida vida;
     {
         estaDano = true;
         animator.Play("Dano");
-        yield return new WaitForSeconds(0.5f); // tempo visível da animação
+        yield return new WaitForSeconds(1.03f); // tempo visível da animação
         estaDano = false;
         animator.Play("Dano");
     }
@@ -174,7 +200,7 @@ public Vida vida;
     {
         if (Vida.vidaPerdida <= 0)
         {
-         StartCoroutine(Morreu());
+            StartCoroutine(Morreu());
         }
         else if (rb.linearVelocityY > 0 && !morto && !estaDano) animator.Play("Pulando");
         else if (horizontal == 0 && !morto && !estaDano) animator.Play("ParadoPlataforma");
@@ -183,9 +209,9 @@ public Vida vida;
     }
     private IEnumerator Morreu()
     {
-           morto = true;
-            animator.Play("Morreu");
-            yield return new WaitForSeconds(1.4f);
-            this.enabled = false;
+        morto = true;
+        animator.Play("Morreu");
+        yield return new WaitForSeconds(1.6f);
+        this.enabled = false;
     }
 }

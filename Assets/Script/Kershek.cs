@@ -23,6 +23,7 @@ public class Kershek : MonoBehaviour
     private Transform jogador;
     private float tempoDesdeUltimoTiro;
     private bool noChao;
+    private bool encostouJogador=false;
     private Animator animator;
 
     void Start()
@@ -43,10 +44,11 @@ public class Kershek : MonoBehaviour
 
         // ► PULAR NO MESMO FRAME QUE O PLAYER (SEM DELAY)
         CopiarPuloInstantaneo();
-
+  float dirX = Mathf.Sign(jogador.position.x - transform.position.x);
         // ► Movimentação horizontal perseguindo
-        float dirX = Mathf.Sign(jogador.position.x - transform.position.x);
+        if(encostouJogador){
         rb.linearVelocity = new Vector2(dirX * velocidade, rb.linearVelocity.y);
+        }
 
         // ► Flip
         if (dirX != 0)
@@ -113,6 +115,13 @@ public class Kershek : MonoBehaviour
         {
             Gizmos.color = Color.green;
             Gizmos.DrawSphere(pontoTiro.position, 0.08f);
+        }
+    }
+    void OnTriggerEnter2D (Collider2D other)
+    {
+        if(other.CompareTag("Player"))
+        {
+            encostouJogador=true;
         }
     }
   

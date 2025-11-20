@@ -3,7 +3,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class Menu : MonoBehaviour
+public class MenuKershek : MonoBehaviour
 {
     public Button[] button;
     public GameObject pause;
@@ -14,6 +14,7 @@ public class Menu : MonoBehaviour
     private bool onVitoria = false;
     private bool onHud;
     private bool onPause = false;
+    public VidaKershek vidaKershek;
     void Start()
     {
         Time.timeScale = 1;
@@ -50,7 +51,7 @@ public class Menu : MonoBehaviour
             onHud = !onHud;
             Time.timeScale = 0;
         }
-        if (HudInimigo.vidaPerdidas <= 0)
+        if ( vidaKershek.vidaTotal<= 0)
         {
             onVitoria = true;
             onHud = false;
@@ -73,3 +74,4 @@ public class Menu : MonoBehaviour
         Morreu();
     }
 }
+

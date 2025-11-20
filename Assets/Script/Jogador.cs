@@ -101,7 +101,6 @@ public class Jogador : MonoBehaviour
 
     IEnumerator Ataque()
     {
-        animator.Play("Bicada");
         bico.SetActive(true);
         estaAtaque = true;
         yield return new WaitForSeconds(0.45f);
@@ -156,7 +155,7 @@ public class Jogador : MonoBehaviour
     {
         estaDano = true;
         animator.Play("Dano");
-        yield return new WaitForSeconds(0.5f); // tempo visível da animação
+        yield return new WaitForSeconds(1.03f); // tempo visível da animação
         estaDano = false;
         animator.Play("Dano");
     }
@@ -173,6 +172,7 @@ public class Jogador : MonoBehaviour
         {
          StartCoroutine(Morreu());
         }
+        else if(estaAtaque)animator.Play("Bicada");
           else   if (rb.linearVelocityY > 0 &&  !morto && !estaDano) animator.Play("Pulando");
         else if (horizontal == 0 && !morto && !estaDano) animator.Play("ParadoPlataforma");
         else if (horizontal != 0 &&  !morto && !estaDano) animator.Play("Andando");
