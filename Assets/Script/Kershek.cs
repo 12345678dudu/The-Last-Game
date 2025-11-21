@@ -46,7 +46,7 @@ public class Kershek : MonoBehaviour
         CopiarPuloInstantaneo();
   float dirX = Mathf.Sign(jogador.position.x - transform.position.x);
         // ► Movimentação horizontal perseguindo
-        if(encostouJogador){
+        if(!encostouJogador){
         rb.linearVelocity = new Vector2(dirX * velocidade, rb.linearVelocity.y);
         }
 
@@ -122,6 +122,13 @@ public class Kershek : MonoBehaviour
         if(other.CompareTag("Player"))
         {
             encostouJogador=true;
+        }
+    }
+     void OnTriggerExit2D (Collider2D other)
+    {
+        if(other.CompareTag("Player"))
+        {
+            encostouJogador=false;
         }
     }
   

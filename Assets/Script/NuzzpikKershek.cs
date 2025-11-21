@@ -22,12 +22,6 @@ public class NuzzpikKershek : MonoBehaviour
     [SerializeField] private float forcaPulo;
     public float quantidadeMaxPulo;
     private float quantidadePulo;
-    public float puloMin = 6f;           // pulo fraco
-public float puloMax = 14f;          // pulo forte
-public float tempoMaxPressionado = 0.3f; // tempo até atingir força máxima
-
-private float tempoPressionado = 0f;
-private bool carregandoPulo = false;
 
     [Header("Detecção do Chão")]
     [SerializeField] private bool noChao;
@@ -59,35 +53,20 @@ private bool carregandoPulo = false;
     }
 
     void Pulo()
-    {if (Input.GetKeyDown(KeyCode.Space) && quantidadePulo > 0)
     {
-        carregandoPulo = true;
-        tempoPressionado = 0f;
-    }
-
-    // Segurando: acumula força do pulo
-    if (Input.GetKey(KeyCode.Space) && carregandoPulo)
-    {
-        tempoPressionado += Time.deltaTime;
-    }
-    if (Input.GetKeyUp(KeyCode.Space) && carregandoPulo)
-    {
-        quantidadePulo--;
-        float t = Mathf.Clamp01(tempoPressionado / tempoMaxPressionado);
-        float forcaFinal = Mathf.Lerp(puloMin, puloMax, t);
-        rb.linearVelocity = new Vector2(rb.linearVelocity.x, 0f);
-        rb.AddForce(Vector2.up * forcaFinal, ForceMode2D.Impulse);
-        AudioManager(0);
-        ultimoPuloPos = transform.position;
-        pulouAgora = true;
-
-        carregandoPulo = false;
-    }
+        if (Input.GetKeyDown(KeyCode.Space) && quantidadePulo > 0)
+        {
+            quantidadePulo--;
+            rb.linearVelocity = new Vector2(rb.linearVelocity.x, 0f);
+            rb.AddForce(Vector2.up * forcaPulo, ForceMode2D.Impulse);
+            AudioManager(0);
+            ultimoPuloPos = transform.position;
+            pulouAgora = true;
+        }
 
         // Controla a queda mais leve segurando tecla E
         rb.gravityScale = Input.GetKey(KeyCode.L) && rb.linearVelocity.y < 0 ? 0.5f : 1.5f;
     }
-
     void Deteccao()
     {
         noChao = Physics2D.OverlapCircle(encostandoChao.position, areaChecaChao, checaChao);
@@ -162,11 +141,19 @@ private bool carregandoPulo = false;
         {
             Vida.vidaPerdida -= vida.vidaTotal;
         }
-        if(other.CompareTag("Bala"))
+        if (other.CompareTag("Bala"))
         {
-              Vida.vidaPerdida += other.gameObject.GetComponent<BalaDireita>().dano;
+            Vida.vidaPerdida += other.gameObject.GetComponent<BalaDireita>().dano;
             AudioManager(1);
             if (Vida.vidaPerdida > 0)
+            {
+                StartCoroutine(TomarDano());
+            }
+        }
+        if(other.CompareTag("Armadilha"))
+        {
+            Vida.vidaPerdida += other.gameObject.GetComponent<Armadilha>().dano;
+               if (Vida.vidaPerdida > 0)
             {
                 StartCoroutine(TomarDano());
             }
@@ -211,7 +198,7 @@ private bool carregandoPulo = false;
     {
         morto = true;
         animator.Play("Morreu");
-        yield return new WaitForSeconds(1.6f);
         this.enabled = false;
+        yield return new WaitForSeconds(1.6f);
     }
 }

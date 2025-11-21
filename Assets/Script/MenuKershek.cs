@@ -14,7 +14,6 @@ public class MenuKershek : MonoBehaviour
     private bool onVitoria = false;
     private bool onHud;
     private bool onPause = false;
-    public VidaKershek vidaKershek;
     void Start()
     {
         Time.timeScale = 1;
@@ -51,12 +50,6 @@ public class MenuKershek : MonoBehaviour
             onHud = !onHud;
             Time.timeScale = 0;
         }
-        if ( vidaKershek.vidaTotal<= 0)
-        {
-            onVitoria = true;
-            onHud = false;
-            Time.timeScale = 0; 
-        }
         if (Vida.vidaPerdida <= 0)
         {
             StartCoroutine(MorreuAnimacao());
@@ -73,5 +66,13 @@ public class MenuKershek : MonoBehaviour
         yield return new WaitForSeconds(1.53f);
         Morreu();
     }
+    void OnTriggerEnter2D(Collider2D other)
+    {
+         if (other.CompareTag("Vitoria"))
+        {
+            onVitoria = true;
+            onHud = false;
+            Time.timeScale = 0; 
+        }
+    }
 }
-

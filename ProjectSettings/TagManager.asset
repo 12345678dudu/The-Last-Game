@@ -12,6 +12,12 @@ TagManager:
   - Rope
   - Banana
   - Grama
+  - Limite
+  - Jardelas
+  - Bala
+  - Vitoria
+  - BalaAerea
+  - Armadilha
   layers:
   - Default
   - TransparentFX
