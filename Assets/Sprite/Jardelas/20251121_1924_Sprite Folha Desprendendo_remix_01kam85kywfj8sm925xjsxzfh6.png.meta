@@ -1,0 +1,368 @@
+fileFormatVersion: 2
+guid: 79e40f05a436e8a418e7a2aa6e495f59
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1664529750606354564
+    second: 20251121_1924_Sprite Folha Desprendendo_remix_01kam85kywfj8sm925xjsxzfh6_0
+  - first:
+      213: 8688881264403194083
+    second: 20251121_1924_Sprite Folha Desprendendo_remix_01kam85kywfj8sm925xjsxzfh6_1
+  - first:
+      213: 9097213395483530748
+    second: 20251121_1924_Sprite Folha Desprendendo_remix_01kam85kywfj8sm925xjsxzfh6_2
+  - first:
+      213: 4906409296166591623
+    second: 20251121_1924_Sprite Folha Desprendendo_remix_01kam85kywfj8sm925xjsxzfh6_3
+  - first:
+      213: 953284291907672604
+    second: 20251121_1924_Sprite Folha Desprendendo_remix_01kam85kywfj8sm925xjsxzfh6_4
+  - first:
+      213: -7661264104947182144
+    second: 20251121_1924_Sprite Folha Desprendendo_remix_01kam85kywfj8sm925xjsxzfh6_5
+  - first:
+      213: -8186959100417659786
+    second: 20251121_1924_Sprite Folha Desprendendo_remix_01kam85kywfj8sm925xjsxzfh6_6
+  - first:
+      213: -710283653062556931
+    second: 20251121_1924_Sprite Folha Desprendendo_remix_01kam85kywfj8sm925xjsxzfh6_7
+  - first:
+      213: -7286223107153207821
+    second: 20251121_1924_Sprite Folha Desprendendo_remix_01kam85kywfj8sm925xjsxzfh6_8
+  - first:
+      213: 6025674683830679783
+    second: 20251121_1924_Sprite Folha Desprendendo_remix_01kam85kywfj8sm925xjsxzfh6_9
+  - first:
+      213: 8326232606075345198
+    second: 20251121_1924_Sprite Folha Desprendendo_remix_01kam85kywfj8sm925xjsxzfh6_10
+  - first:
+      213: 4917234399526973787
+    second: 20251121_1924_Sprite Folha Desprendendo_remix_01kam85kywfj8sm925xjsxzfh6_11
+  - first:
+      213: 74190779382663922
+    second: 20251121_1924_Sprite Folha Desprendendo_remix_01kam85kywfj8sm925xjsxzfh6_12
+  - first:
+      213: 5148093897458307045
+    second: 20251121_1924_Sprite Folha Desprendendo_remix_01kam85kywfj8sm925xjsxzfh6_13
+  - first:
+      213: -2782477793013710772
+    second: 20251121_1924_Sprite Folha Desprendendo_remix_01kam85kywfj8sm925xjsxzfh6_14
+  - first:
+      213: 2098697101668768720
+    second: 20251121_1924_Sprite Folha Desprendendo_remix_01kam85kywfj8sm925xjsxzfh6_15
+  - first:
+      213: -7000906688160756973
+    second: 20251121_1924_Sprite Folha Desprendendo_remix_01kam85kywfj8sm925xjsxzfh6_16
+  - first:
+      213: 1061855111312291957
+    second: 20251121_1924_Sprite Folha Desprendendo_remix_01kam85kywfj8sm925xjsxzfh6_17
+  - first:
+      213: -4324318514708524195
+    second: 20251121_1924_Sprite Folha Desprendendo_remix_01kam85kywfj8sm925xjsxzfh6_18
+  - first:
+      213: -3963018160276287114
+    second: 20251121_1924_Sprite Folha Desprendendo_remix_01kam85kywfj8sm925xjsxzfh6_19
+  - first:
+      213: 59466554109701073
+    second: 20251121_1924_Sprite Folha Desprendendo_remix_01kam85kywfj8sm925xjsxzfh6_20
+  - first:
+      213: -3820861361362432378
+    second: 20251121_1924_Sprite Folha Desprendendo_remix_01kam85kywfj8sm925xjsxzfh6_21
+  - first:
+      213: 5134936315282133767
+    second: 20251121_1924_Sprite Folha Desprendendo_remix_01kam85kywfj8sm925xjsxzfh6_22
+  - first:
+      213: -4919733858854933560
+    second: 20251121_1924_Sprite Folha Desprendendo_remix_01kam85kywfj8sm925xjsxzfh6_23
+  - first:
+      213: -1549424487907156874
+    second: 20251121_1924_Sprite Folha Desprendendo_remix_01kam85kywfj8sm925xjsxzfh6_24
+  - first:
+      213: -7863618675956906083
+    second: 20251121_1924_Sprite Folha Desprendendo_remix_01kam85kywfj8sm925xjsxzfh6_25
+  - first:
+      213: -1008785949600693668
+    second: 20251121_1924_Sprite Folha Desprendendo_remix_01kam85kywfj8sm925xjsxzfh6_26
+  - first:
+      213: 5819755570088046930
+    second: 20251121_1924_Sprite Folha Desprendendo_remix_01kam85kywfj8sm925xjsxzfh6_27
+  - first:
+      213: -4875338198414171259
+    second: 20251121_1924_Sprite Folha Desprendendo_remix_01kam85kywfj8sm925xjsxzfh6_28
+  - first:
+      213: -6374549149721823130
+    second: 20251121_1924_Sprite Folha Desprendendo_remix_01kam85kywfj8sm925xjsxzfh6_29
+  - first:
+      213: -4029031574329690744
+    second: 20251121_1924_Sprite Folha Desprendendo_remix_01kam85kywfj8sm925xjsxzfh6_30
+  - first:
+      213: 2497056941350983595
+    second: 20251121_1924_Sprite Folha Desprendendo_remix_01kam85kywfj8sm925xjsxzfh6_31
+  - first:
+      213: 3109246783612018528
+    second: 20251121_1924_Sprite Folha Desprendendo_remix_01kam85kywfj8sm925xjsxzfh6_32
+  - first:
+      213: 5528690194835529177
+    second: 20251121_1924_Sprite Folha Desprendendo_remix_01kam85kywfj8sm925xjsxzfh6_33
+  - first:
+      213: 821196739865404006
+    second: 20251121_1924_Sprite Folha Desprendendo_remix_01kam85kywfj8sm925xjsxzfh6_34
+  - first:
+      213: -1354056131530591306
+    second: 20251121_1924_Sprite Folha Desprendendo_remix_01kam85kywfj8sm925xjsxzfh6_35
+  - first:
+      213: -598780280271209107
+    second: 20251121_1924_Sprite Folha Desprendendo_remix_01kam85kywfj8sm925xjsxzfh6_36
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: 20251121_1924_Sprite Folha Desprendendo_remix_01kam85kywfj8sm925xjsxzfh6_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 512
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48816f63df8991710800000000000000
+      internalID: 1664529750606354564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20251121_1924_Sprite Folha Desprendendo_remix_01kam85kywfj8sm925xjsxzfh6_1
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 512
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e0ac4c697b159870800000000000000
+      internalID: 8688881264403194083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20251121_1924_Sprite Folha Desprendendo_remix_01kam85kywfj8sm925xjsxzfh6_2
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 512
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf598b3526bcf3e70800000000000000
+      internalID: 9097213395483530748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20251121_1924_Sprite Folha Desprendendo_remix_01kam85kywfj8sm925xjsxzfh6_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78c1fa47241171440800000000000000
+      internalID: 4906409296166591623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20251121_1924_Sprite Folha Desprendendo_remix_01kam85kywfj8sm925xjsxzfh6_4
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 0
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1add15430fba3d00800000000000000
+      internalID: 953284291907672604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20251121_1924_Sprite Folha Desprendendo_remix_01kam85kywfj8sm925xjsxzfh6_5
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 0
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c51c2e33e8bda590800000000000000
+      internalID: -7661264104947182144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 91fb70f5d28649a49b1c667a51d5accb
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":3.0,"y":2.0},"gridSpriteSize":{"x":512.0,"y":512.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      20251121_1924_Sprite Folha Desprendendo_remix_01kam85kywfj8sm925xjsxzfh6_0: 1664529750606354564
+      20251121_1924_Sprite Folha Desprendendo_remix_01kam85kywfj8sm925xjsxzfh6_1: 8688881264403194083
+      20251121_1924_Sprite Folha Desprendendo_remix_01kam85kywfj8sm925xjsxzfh6_2: 9097213395483530748
+      20251121_1924_Sprite Folha Desprendendo_remix_01kam85kywfj8sm925xjsxzfh6_3: 4906409296166591623
+      20251121_1924_Sprite Folha Desprendendo_remix_01kam85kywfj8sm925xjsxzfh6_4: 953284291907672604
+      20251121_1924_Sprite Folha Desprendendo_remix_01kam85kywfj8sm925xjsxzfh6_5: -7661264104947182144
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
