@@ -21,6 +21,8 @@ TagManager:
   - Patrulha
   - Maconha
   - Fragmento
+  - Raio
+  - Choque
   layers:
   - Default
   - TransparentFX

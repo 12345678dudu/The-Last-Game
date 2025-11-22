@@ -1,4 +1,6 @@
+using System.Collections;
 using UnityEngine;
+using UnityEngine.Playables;
 
 public class Jardelas : MonoBehaviour
 {
@@ -40,8 +42,13 @@ public class Jardelas : MonoBehaviour
     public Jogador jogador;
     public float tempoBala;
     private float contabilizadorBala;
-    public GameObject maconha;
+    public GameObject[] Bala;
     public Transform posicao;
+    public GameObject Fundo;
+     public GameObject FundoAnimados;
+    public GameObject Spaw;
+    public Animator fundoAnimado;
+    private bool corrotina=false;
 
     void Start()
     {
@@ -71,8 +78,7 @@ public class Jardelas : MonoBehaviour
     // ----------------- PULO -----------------
     void Pulo()
     {
-        if (!faseTwo)
-        {
+        
 
             tempoparaPular += Time.deltaTime;
 
@@ -95,7 +101,7 @@ public class Jardelas : MonoBehaviour
 
         }
 
-    }
+    
 
 
     // ----------------- DETECÇÃO DO CHÃO -----------------
@@ -133,21 +139,37 @@ public class Jardelas : MonoBehaviour
                     Limite.SetActive(true);
                     Virar();
                 }
-                if (estaAndando)correndo.SetActive(true);
+                if (estaAndando) correndo.SetActive(true);
             }
             if (!estaAndando) correndo.SetActive(false);
         }
     }
     void Atirar()
     {
-        if (tempoCorrida <= tempoCorridaVariavel)
+        if (!faseTwo)
         {
-            contabilizadorBala += Time.deltaTime;
-            if (tempoBala <= contabilizadorBala)
+            if (tempoCorrida <= tempoCorridaVariavel)
             {
-                Instantiate(maconha, posicao.position, Quaternion.identity);
-                contabilizadorBala = 0;
+                contabilizadorBala += Time.deltaTime;
+                if (tempoBala <= contabilizadorBala)
+                {
+                    Instantiate(Bala[0], posicao.position, Quaternion.identity);
+                    contabilizadorBala = 0;
+                }
             }
+        }
+        if (faseTwo)
+        {
+            if (tempoCorrida <= tempoCorridaVariavel)
+            {
+                contabilizadorBala += Time.deltaTime*2;
+                if (tempoBala <= contabilizadorBala)
+                {
+                    Instantiate(Bala[1], posicao.position, transform.rotation);
+                    contabilizadorBala = 0;
+                }
+            }
+
         }
     }
 
@@ -169,7 +191,7 @@ public class Jardelas : MonoBehaviour
             tempoCorrida = 0;
         }
 
-        if (coll.CompareTag("Player")&&!estaAndando)
+        if (coll.CompareTag("Player") && !estaAndando)
         {
             HudInimigo.vidaPerdidas += jogador.danoJogador;
         }
@@ -198,18 +220,25 @@ public class Jardelas : MonoBehaviour
 
     void FaseTwo()
     {
-        if (HudInimigo.vidaPerdidas <= 150 && !faseTwo)
+        if (HudInimigo.vidaPerdidas <= 100 && !faseTwo)
         {
             faseTwo = true;
             tempoCorrida = 0;
             tempoparaPular = 0;
         }
 
-        if (faseTwo)
+        if (faseTwo&&!corrotina)
         {
-
-
+            StartCoroutine(FundoAnimado());
         }
+    }
+    private IEnumerator FundoAnimado()
+    {
+        Fundo.SetActive(false);
+        FundoAnimados.SetActive(true);
+        corrotina=true;
+        yield return new WaitForSeconds(2.92f);
+            Spaw.SetActive(true);
     }
     void Morreu()
     {

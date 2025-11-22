@@ -29,9 +29,9 @@ public class Patrulha : MonoBehaviour
     }
     void Spawner()
     {
-        if (HudInimigo.vidaPerdidas <= 250)
+        if (HudInimigo.vidaPerdidas <= 100)
         {
-            indexPrefab = Random.Range(0, prefab.Length);
+            indexPrefab = Random.Range(0, spawPrefab.Length);
             Instantiate(prefab[indexPrefab], spawPrefab[indexPrefab].position, Quaternion.identity);
         }
     }

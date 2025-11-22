@@ -28,6 +28,7 @@ public class Maconha : MonoBehaviour
 
     void Update()
     {
+        if(!jaExplodiu)animator.Play("Voando");
         transform.position += -transform.right * velocidade * Time.deltaTime;
 
         contabilizadorExplosao += Time.deltaTime;
@@ -52,7 +53,7 @@ public class Maconha : MonoBehaviour
 
     animator.Play("Explosao");
 
-    yield return new WaitForSeconds(2);
+    yield return new WaitForSeconds(0.83f);
 
     for (int i = 0; i < posicaoFragmentosMaconha.Length; i++)
     {

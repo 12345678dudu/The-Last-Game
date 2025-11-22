@@ -325,7 +325,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Maconha
   velocidade: 5
-  tempoExplosao: 0.5
+  tempoExplosao: 1.3
   posicaoFragmentosMaconha:
   - {fileID: 4105710447051473448}
   - {fileID: 5774807650324408472}

@@ -1,0 +1,507 @@
+fileFormatVersion: 2
+guid: e50ecd0a55d79f349988c2faba615773
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6978324389266678407
+    second: 20251121_1553_Raio_em_Sprite_Sheet_simple_compose_01kakw3mzteqr80hcnz2kk41dm-removebg-preview_0
+  - first:
+      213: 6146706330951303117
+    second: 20251121_1553_Raio_em_Sprite_Sheet_simple_compose_01kakw3mzteqr80hcnz2kk41dm-removebg-preview_1
+  - first:
+      213: 5301924973646926686
+    second: 20251121_1553_Raio_em_Sprite_Sheet_simple_compose_01kakw3mzteqr80hcnz2kk41dm-removebg-preview_2
+  - first:
+      213: -6580065809929355596
+    second: 20251121_1553_Raio_em_Sprite_Sheet_simple_compose_01kakw3mzteqr80hcnz2kk41dm-removebg-preview_3
+  - first:
+      213: -7208311022529823457
+    second: 20251121_1553_Raio_em_Sprite_Sheet_simple_compose_01kakw3mzteqr80hcnz2kk41dm-removebg-preview_4
+  - first:
+      213: -1229964136973682087
+    second: 20251121_1553_Raio_em_Sprite_Sheet_simple_compose_01kakw3mzteqr80hcnz2kk41dm-removebg-preview_5
+  - first:
+      213: -8931308178021525348
+    second: 20251121_1553_Raio_em_Sprite_Sheet_simple_compose_01kakw3mzteqr80hcnz2kk41dm-removebg-preview_6
+  - first:
+      213: 458425081018555476
+    second: 20251121_1553_Raio_em_Sprite_Sheet_simple_compose_01kakw3mzteqr80hcnz2kk41dm-removebg-preview_7
+  - first:
+      213: 5378710153713532461
+    second: 20251121_1553_Raio_em_Sprite_Sheet_simple_compose_01kakw3mzteqr80hcnz2kk41dm-removebg-preview_8
+  - first:
+      213: 525886687786768515
+    second: 20251121_1553_Raio_em_Sprite_Sheet_simple_compose_01kakw3mzteqr80hcnz2kk41dm-removebg-preview_9
+  - first:
+      213: -3870100741338322147
+    second: 20251121_1553_Raio_em_Sprite_Sheet_simple_compose_01kakw3mzteqr80hcnz2kk41dm-removebg-preview_10
+  - first:
+      213: -4255053214913732065
+    second: 20251121_1553_Raio_em_Sprite_Sheet_simple_compose_01kakw3mzteqr80hcnz2kk41dm-removebg-preview_11
+  - first:
+      213: 3388740753035192113
+    second: 20251121_1553_Raio_em_Sprite_Sheet_simple_compose_01kakw3mzteqr80hcnz2kk41dm-removebg-preview_12
+  - first:
+      213: -3209757944869542603
+    second: 20251121_1553_Raio_em_Sprite_Sheet_simple_compose_01kakw3mzteqr80hcnz2kk41dm-removebg-preview_13
+  - first:
+      213: 54801365396716228
+    second: 20251121_1553_Raio_em_Sprite_Sheet_simple_compose_01kakw3mzteqr80hcnz2kk41dm-removebg-preview_14
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: 20251121_1553_Raio_em_Sprite_Sheet_simple_compose_01kakw3mzteqr80hcnz2kk41dm-removebg-preview_0
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 512
+        width: 11
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97d9052d0f2082f90800000000000000
+      internalID: -6978324389266678407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20251121_1553_Raio_em_Sprite_Sheet_simple_compose_01kakw3mzteqr80hcnz2kk41dm-removebg-preview_1
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 472
+        width: 32
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dcf3ff267dc7d4550800000000000000
+      internalID: 6146706330951303117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20251121_1553_Raio_em_Sprite_Sheet_simple_compose_01kakw3mzteqr80hcnz2kk41dm-removebg-preview_2
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 438
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e535ff73ca8349940800000000000000
+      internalID: 5301924973646926686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20251121_1553_Raio_em_Sprite_Sheet_simple_compose_01kakw3mzteqr80hcnz2kk41dm-removebg-preview_3
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 433
+        width: 41
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4beb7703209eea4a0800000000000000
+      internalID: -6580065809929355596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20251121_1553_Raio_em_Sprite_Sheet_simple_compose_01kakw3mzteqr80hcnz2kk41dm-removebg-preview_4
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 229
+        width: 46
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1db397f05fe6fb90800000000000000
+      internalID: -7208311022529823457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20251121_1553_Raio_em_Sprite_Sheet_simple_compose_01kakw3mzteqr80hcnz2kk41dm-removebg-preview_5
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 274
+        width: 35
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95ab631522a4eeee0800000000000000
+      internalID: -1229964136973682087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20251121_1553_Raio_em_Sprite_Sheet_simple_compose_01kakw3mzteqr80hcnz2kk41dm-removebg-preview_6
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 269
+        width: 36
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c985c7d388e9d0480800000000000000
+      internalID: -8931308178021525348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20251121_1553_Raio_em_Sprite_Sheet_simple_compose_01kakw3mzteqr80hcnz2kk41dm-removebg-preview_7
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 235
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45c9d3eae27ac5600800000000000000
+      internalID: 458425081018555476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20251121_1553_Raio_em_Sprite_Sheet_simple_compose_01kakw3mzteqr80hcnz2kk41dm-removebg-preview_8
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 230
+        width: 56
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2eb1ed136405aa40800000000000000
+      internalID: 5378710153713532461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20251121_1553_Raio_em_Sprite_Sheet_simple_compose_01kakw3mzteqr80hcnz2kk41dm-removebg-preview_9
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 25
+        width: 58
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38813a108235c4700800000000000000
+      internalID: 525886687786768515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20251121_1553_Raio_em_Sprite_Sheet_simple_compose_01kakw3mzteqr80hcnz2kk41dm-removebg-preview_10
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 63
+        width: 39
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1bad8361e3aa4ac0800000000000000
+      internalID: -3870100741338322147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20251121_1553_Raio_em_Sprite_Sheet_simple_compose_01kakw3mzteqr80hcnz2kk41dm-removebg-preview_11
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 62
+        width: 39
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f12eea035a303f4c0800000000000000
+      internalID: -4255053214913732065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20251121_1553_Raio_em_Sprite_Sheet_simple_compose_01kakw3mzteqr80hcnz2kk41dm-removebg-preview_12
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 41
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1376d84b2c9370f20800000000000000
+      internalID: 3388740753035192113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20251121_1553_Raio_em_Sprite_Sheet_simple_compose_01kakw3mzteqr80hcnz2kk41dm-removebg-preview_13
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 29
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5352019b726a473d0800000000000000
+      internalID: -3209757944869542603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20251121_1553_Raio_em_Sprite_Sheet_simple_compose_01kakw3mzteqr80hcnz2kk41dm-removebg-preview_14
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 25
+        width: 32
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ca7dad2d81b2c000800000000000000
+      internalID: 54801365396716228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      20251121_1553_Raio_em_Sprite_Sheet_simple_compose_01kakw3mzteqr80hcnz2kk41dm-removebg-preview_0: -6978324389266678407
+      20251121_1553_Raio_em_Sprite_Sheet_simple_compose_01kakw3mzteqr80hcnz2kk41dm-removebg-preview_1: 6146706330951303117
+      20251121_1553_Raio_em_Sprite_Sheet_simple_compose_01kakw3mzteqr80hcnz2kk41dm-removebg-preview_10: -3870100741338322147
+      20251121_1553_Raio_em_Sprite_Sheet_simple_compose_01kakw3mzteqr80hcnz2kk41dm-removebg-preview_11: -4255053214913732065
+      20251121_1553_Raio_em_Sprite_Sheet_simple_compose_01kakw3mzteqr80hcnz2kk41dm-removebg-preview_12: 3388740753035192113
+      20251121_1553_Raio_em_Sprite_Sheet_simple_compose_01kakw3mzteqr80hcnz2kk41dm-removebg-preview_13: -3209757944869542603
+      20251121_1553_Raio_em_Sprite_Sheet_simple_compose_01kakw3mzteqr80hcnz2kk41dm-removebg-preview_14: 54801365396716228
+      20251121_1553_Raio_em_Sprite_Sheet_simple_compose_01kakw3mzteqr80hcnz2kk41dm-removebg-preview_2: 5301924973646926686
+      20251121_1553_Raio_em_Sprite_Sheet_simple_compose_01kakw3mzteqr80hcnz2kk41dm-removebg-preview_3: -6580065809929355596
+      20251121_1553_Raio_em_Sprite_Sheet_simple_compose_01kakw3mzteqr80hcnz2kk41dm-removebg-preview_4: -7208311022529823457
+      20251121_1553_Raio_em_Sprite_Sheet_simple_compose_01kakw3mzteqr80hcnz2kk41dm-removebg-preview_5: -1229964136973682087
+      20251121_1553_Raio_em_Sprite_Sheet_simple_compose_01kakw3mzteqr80hcnz2kk41dm-removebg-preview_6: -8931308178021525348
+      20251121_1553_Raio_em_Sprite_Sheet_simple_compose_01kakw3mzteqr80hcnz2kk41dm-removebg-preview_7: 458425081018555476
+      20251121_1553_Raio_em_Sprite_Sheet_simple_compose_01kakw3mzteqr80hcnz2kk41dm-removebg-preview_8: 5378710153713532461
+      20251121_1553_Raio_em_Sprite_Sheet_simple_compose_01kakw3mzteqr80hcnz2kk41dm-removebg-preview_9: 525886687786768515
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

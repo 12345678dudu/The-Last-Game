@@ -54,7 +54,7 @@ public class NuzzpikKershek : MonoBehaviour
 
     void Pulo()
     {
-        if (Input.GetKeyDown(KeyCode.Space) && quantidadePulo > 0)
+        if (Input.GetKeyDown(KeyCode.Space) && quantidadePulo > 0&& noChao)
         {
             quantidadePulo--;
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, 0f);
@@ -111,49 +111,48 @@ public class NuzzpikKershek : MonoBehaviour
         {
             Vida.vidaPerdida += other.gameObject.GetComponent<Bala>().dano;
             AudioManager(1);
-            if (Vida.vidaPerdida > 0)
+              if (Vida.vidaPerdida > 0&&!morto)
             {
                 StartCoroutine(TomarDano());
             }
         }
-        if (other.CompareTag("Kershek"))
+        if (other.CompareTag("Kershek")&&!estaDano)
         {
             Vida.vidaPerdida += other.gameObject.GetComponent<Kershek>().danos;
-            if (Vida.vidaPerdida > 0)
+             if (Vida.vidaPerdida > 0&&!morto)
             {
                 StartCoroutine(TomarDano());
             }
         }
-        if (other.CompareTag("Grama"))
+        if (other.CompareTag("Grama")&&!estaDano)
         {
             velocidade = velocidade - 2f;
         }
-        if (other.CompareTag("Arvore"))
+        if (other.CompareTag("Arvore")&&!estaDano)
         {
             Vida.vidaPerdida += other.gameObject.GetComponent<ArvoreInimigo>().dano;
-            if (Vida.vidaPerdida > 0)
+             if (Vida.vidaPerdida > 0&&!morto)
             {
                 StartCoroutine(TomarDano());
-                velocidade = velocidade - 0.5f;
             }
         }
         if (other.CompareTag("Agua"))
         {
             Vida.vidaPerdida -= vida.vidaTotal;
         }
-        if (other.CompareTag("Bala"))
+        if (other.CompareTag("Bala")&&!estaDano)
         {
             Vida.vidaPerdida += other.gameObject.GetComponent<BalaDireita>().dano;
             AudioManager(1);
-            if (Vida.vidaPerdida > 0)
+             if (Vida.vidaPerdida > 0&&!morto)
             {
                 StartCoroutine(TomarDano());
             }
         }
-        if(other.CompareTag("Armadilha"))
+        if(other.CompareTag("Armadilha")&&!estaDano)
         {
             Vida.vidaPerdida += other.gameObject.GetComponent<DanoArmadilha>().dano;
-               if (Vida.vidaPerdida > 0)
+               if (Vida.vidaPerdida > 0&&!morto)
             {
                 StartCoroutine(TomarDano());
             }
@@ -198,7 +197,7 @@ public class NuzzpikKershek : MonoBehaviour
     {
         morto = true;
         animator.Play("Morreu");
-        this.enabled = false;
-        yield return new WaitForSeconds(1.6f);
+        yield return new WaitForSeconds(1.3f);
+             this.enabled = false;
     }
 }

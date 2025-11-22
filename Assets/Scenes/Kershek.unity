@@ -11447,6 +11447,7 @@ MonoBehaviour:
   intervaloTiro: 1.5
   forcaTiro: 10
   distanciaTiro: 131
+  tempoPulo: 4
 --- !u!50 &1175147175
 Rigidbody2D:
   serializedVersion: 5

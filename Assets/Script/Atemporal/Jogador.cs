@@ -115,52 +115,68 @@ public class Jogador : MonoBehaviour
     }
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Bala"))
+        if (other.CompareTag("Bala")&&!estaDano)
         {
             Vida.vidaPerdida += other.gameObject.GetComponent<Bala>().dano;
             AudioManager(1);
-            if (Vida.vidaPerdida > 0)
+              if (Vida.vidaPerdida > 0&&!morto)
             {
                 StartCoroutine(TomarDano());
             }
         }
-        if (other.CompareTag("BalaAerea"))
+        if (other.CompareTag("BalaAerea")&&!estaDano)
         {
             Vida.vidaPerdida += other.gameObject.GetComponent<BalaAerea>().danos;
-            if (Vida.vidaPerdida > 0)
+              if (Vida.vidaPerdida > 0&&!morto)
             {
                 StartCoroutine(TomarDano());
             }
         }
-        if (other.CompareTag("Patrulha"))
+        if (other.CompareTag("Patrulha")&&!estaDano)
         {
             Vida.vidaPerdida += other.gameObject.GetComponent<PatrulhaDano>().dano;
-            if (Vida.vidaPerdida > 0)
+              if (Vida.vidaPerdida > 0&&!morto)
             {
                 StartCoroutine(TomarDano());
             }
         }
 
-        if (other.CompareTag("Jardelas"))
+        if (other.CompareTag("Jardelas")&&!estaDano)
         {
             Vida.vidaPerdida += other.gameObject.GetComponent<DanoJardelas>().dano;
-            if (Vida.vidaPerdida > 0)
+               if (Vida.vidaPerdida > 0&&!morto)
             {
                 StartCoroutine(TomarDano());
             }
         }
-             if (other.CompareTag("Maconha"))
+             if (other.CompareTag("Maconha")&&!estaDano)
         {
             Vida.vidaPerdida += other.gameObject.GetComponent<Maconha>().dano;
-            if (Vida.vidaPerdida > 0)
+               if (Vida.vidaPerdida > 0&&!morto)
             {
                 StartCoroutine(TomarDano());
             }
         }
-             if (other.CompareTag("Fragmento"))
+             if (other.CompareTag("Fragmento")&&!estaDano)
         {
             Vida.vidaPerdida += other.gameObject.GetComponent<DanoMaconha>().dano;
-            if (Vida.vidaPerdida > 0)
+               if (Vida.vidaPerdida > 0&&!morto)
+            {
+                StartCoroutine(TomarDano());
+            }
+        }
+                if (other.CompareTag("Raio")&&!estaDano)
+        {
+            Vida.vidaPerdida += other.gameObject.GetComponent<Raio>().dano;
+               if (Vida.vidaPerdida > 0&&!morto)
+            {
+                StartCoroutine(TomarDano());
+            }
+        }
+                if (other.CompareTag("Choque")&&!estaDano)
+        {
+            Vida.vidaPerdida += other.gameObject.GetComponent<Bala>().dano;
+               if (Vida.vidaPerdida > 0&&!morto)
             {
                 StartCoroutine(TomarDano());
             }

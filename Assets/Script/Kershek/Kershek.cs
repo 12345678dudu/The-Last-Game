@@ -25,6 +25,8 @@ public class Kershek : MonoBehaviour
     private bool noChao;
     private bool encostouJogador=false;
     private Animator animator;
+    public float tempoPulo;
+    private float contabilizadorPulo;
 
     void Start()
     {
@@ -71,12 +73,19 @@ public class Kershek : MonoBehaviour
     //       SISTEMA DE PULO INSTANTÂNEO — SEM ATRASO
     // ===========================================================
     void CopiarPuloInstantaneo()
-    {
+    {contabilizadorPulo+= Time.deltaTime;
         // Se o player pulou neste frame → inimigo pula no mesmo frame
         if (NuzzpikKershek.pulouAgora && noChao)
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, 0);
             rb.AddForce(Vector2.up * forcaPulo, ForceMode2D.Impulse);
+            contabilizadorPulo=0;
+        }
+        if(tempoPulo<=contabilizadorPulo)
+        {
+           rb.linearVelocity = new Vector2(rb.linearVelocity.x, 0);
+            rb.AddForce(Vector2.up * forcaPulo, ForceMode2D.Impulse); 
+             contabilizadorPulo=0;
         }
     }
 
