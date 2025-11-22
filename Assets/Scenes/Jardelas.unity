@@ -407,37 +407,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 111856220}
   m_CullTransparentMesh: 1
---- !u!1 &186399024
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 186399025}
-  m_Layer: 0
-  m_Name: SpawDanoAereo (1)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &186399025
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 186399024}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 669089333}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &357735512
 GameObject:
   m_ObjectHideFlags: 0
@@ -661,7 +630,7 @@ MonoBehaviour:
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
   m_Version: 2
---- !u!1 &431398926
+--- !u!1 &461530467
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -669,28 +638,28 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 431398927}
+  - component: {fileID: 461530468}
   m_Layer: 0
-  m_Name: SpawDanoAereo (2)
+  m_Name: PosicaoBala
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &431398927
+--- !u!4 &461530468
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 431398926}
+  m_GameObject: {fileID: 461530467}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0.66, y: -0.24, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 669089333}
+  m_Father: {fileID: 711397262}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &464999323
 GameObject:
@@ -828,56 +797,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 464999323}
   m_CullTransparentMesh: 1
---- !u!1 &669089332
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 669089333}
-  - component: {fileID: 669089334}
-  m_Layer: 0
-  m_Name: ControleDanoAereo
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &669089333
+--- !u!4 &711397262 stripped
 Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 8446222159349626644, guid: ce759732f7b821242b5df05ef90a0e8d, type: 3}
+  m_PrefabInstance: {fileID: 3007598028181696089}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 669089332}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.5857, y: 1.24724, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 2102827229}
-  - {fileID: 186399025}
-  - {fileID: 431398927}
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &669089334
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 669089332}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4d00780e136a2f04bbe08f956b77342f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::InimigoAereo
-  prefab: {fileID: 0}
-  spawPrefab: {fileID: 0}
-  spawnTime: 0
 --- !u!1 &840771018
 GameObject:
   m_ObjectHideFlags: 0
@@ -1629,7 +1553,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!95 &1224563772
 Animator:
   serializedVersion: 7
@@ -1698,7 +1622,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_Sprite: {fileID: 3721343307581888368, guid: b3a0b79da94148b4c90f04debddabbb2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -3268,37 +3192,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1980189244}
   m_CullTransparentMesh: 1
---- !u!1 &2102827228
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2102827229}
-  m_Layer: 0
-  m_Name: SpawDanoAereo
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2102827229
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2102827228}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 669089333}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &3007598028181696089
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3324,6 +3217,18 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 5388451832105837581}
     - target: {fileID: 3585296656783278773, guid: ce759732f7b821242b5df05ef90a0e8d, type: 3}
+      propertyPath: maconha
+      value: 
+      objectReference: {fileID: 4219908373808624521, guid: aede8aedafe9b234e8002f57c004c80e, type: 3}
+    - target: {fileID: 3585296656783278773, guid: ce759732f7b821242b5df05ef90a0e8d, type: 3}
+      propertyPath: posicao
+      value: 
+      objectReference: {fileID: 461530468}
+    - target: {fileID: 3585296656783278773, guid: ce759732f7b821242b5df05ef90a0e8d, type: 3}
+      propertyPath: tempoBala
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3585296656783278773, guid: ce759732f7b821242b5df05ef90a0e8d, type: 3}
       propertyPath: colJogador
       value: 
       objectReference: {fileID: 382446402}
@@ -3331,6 +3236,10 @@ PrefabInstance:
       propertyPath: zonaIgnorar
       value: 
       objectReference: {fileID: 1803358384}
+    - target: {fileID: 3585296656783278773, guid: ce759732f7b821242b5df05ef90a0e8d, type: 3}
+      propertyPath: tempoCorridaVariavel
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 7365249019255962906, guid: ce759732f7b821242b5df05ef90a0e8d, type: 3}
       propertyPath: MaxDistance
       value: 482.5275
@@ -3375,9 +3284,13 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6225008397618505062, guid: ce759732f7b821242b5df05ef90a0e8d, type: 3}
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 8446222159349626644, guid: ce759732f7b821242b5df05ef90a0e8d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 461530468}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ce759732f7b821242b5df05ef90a0e8d, type: 3}
 --- !u!1001 &5388451832105837580
@@ -3388,9 +3301,25 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3925318582317206571, guid: cdddf2c027c4375489eb1cd4f1dcd915, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3980164637203247783, guid: cdddf2c027c4375489eb1cd4f1dcd915, type: 3}
+      propertyPath: danoJogador
+      value: -20
+      objectReference: {fileID: 0}
     - target: {fileID: 5894263373624897448, guid: cdddf2c027c4375489eb1cd4f1dcd915, type: 3}
       propertyPath: m_Name
       value: Jogador
+      objectReference: {fileID: 0}
+    - target: {fileID: 5894263373624897448, guid: cdddf2c027c4375489eb1cd4f1dcd915, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5894263373624897448, guid: cdddf2c027c4375489eb1cd4f1dcd915, type: 3}
+      propertyPath: m_TagString
+      value: PlayerOriginal
       objectReference: {fileID: 0}
     - target: {fileID: 5922989960208759154, guid: cdddf2c027c4375489eb1cd4f1dcd915, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3432,7 +3361,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 6631726548237356822, guid: cdddf2c027c4375489eb1cd4f1dcd915, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 3626649572561945713, guid: cdddf2c027c4375489eb1cd4f1dcd915, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -3459,7 +3393,6 @@ SceneRoots:
   - {fileID: 1371593654}
   - {fileID: 1036633011}
   - {fileID: 1342523705}
-  - {fileID: 669089333}
   - {fileID: 1819789148}
   - {fileID: 1446972535}
   - {fileID: 1141537370}

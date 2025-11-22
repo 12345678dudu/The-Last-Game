@@ -270,6 +270,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 80022d54134ffbe4c9736e4b3de9f17b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Jardelas
+  dano: 0
   Limite: {fileID: 0}
   correndo: {fileID: 8956993454462942418}
   tempoCorridaVariavel: 5
@@ -287,6 +288,10 @@ MonoBehaviour:
     m_Bits: 8
   zonaIgnorar: {fileID: 0}
   colJogador: {fileID: 0}
+  jogador: {fileID: 0}
+  tempoBala: 0
+  maconha: {fileID: 0}
+  posicao: {fileID: 0}
 --- !u!1 &1974120662851711315
 GameObject:
   m_ObjectHideFlags: 0
@@ -406,7 +411,7 @@ GameObject:
   m_Component:
   - component: {fileID: 614643854975424067}
   - component: {fileID: 5648528418550782489}
-  - component: {fileID: 6225008397618505062}
+  - component: {fileID: 5033441302152434800}
   m_Layer: 0
   m_Name: DanoCorrendo
   m_TagString: Jardelas
@@ -466,7 +471,7 @@ CapsuleCollider2D:
   m_Offset: {x: -0.06639767, y: -0.008321226}
   m_Size: {x: 0.95734024, y: 1.9063424}
   m_Direction: 0
---- !u!114 &6225008397618505062
+--- !u!114 &5033441302152434800
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -475,7 +480,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 8956993454462942418}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8bd51d39e4fbef24fa81cc6a72ef5244, type: 3}
+  m_Script: {fileID: 11500000, guid: 6c49c7398e5e4044687cde9ef8636a76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DanoJardelas
-  dano: -20
+  dano: -30

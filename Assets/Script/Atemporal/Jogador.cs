@@ -93,7 +93,7 @@ public class Jogador : MonoBehaviour
 
     void DetectarAtaque()
     {
-        if (Input.GetKeyDown(KeyCode.O) && !estaAtaque)
+        if (Input.GetKeyDown(KeyCode.O) && !estaAtaque&&!morto)
         {// ativa animação
             StartCoroutine(Ataque());
         }
@@ -143,7 +143,23 @@ public class Jogador : MonoBehaviour
 
         if (other.CompareTag("Jardelas"))
         {
-            Vida.vidaPerdida += other.gameObject.GetComponent<Jardelas>().dano;
+            Vida.vidaPerdida += other.gameObject.GetComponent<DanoJardelas>().dano;
+            if (Vida.vidaPerdida > 0)
+            {
+                StartCoroutine(TomarDano());
+            }
+        }
+             if (other.CompareTag("Maconha"))
+        {
+            Vida.vidaPerdida += other.gameObject.GetComponent<Maconha>().dano;
+            if (Vida.vidaPerdida > 0)
+            {
+                StartCoroutine(TomarDano());
+            }
+        }
+             if (other.CompareTag("Fragmento"))
+        {
+            Vida.vidaPerdida += other.gameObject.GetComponent<DanoMaconha>().dano;
             if (Vida.vidaPerdida > 0)
             {
                 StartCoroutine(TomarDano());

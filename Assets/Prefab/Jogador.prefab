@@ -167,9 +167,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90b0e735bf0e34749a12fbb5e8738c01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  danoJogador: 0
   velocidade: 5
+  horizontal: 0
   bico: {fileID: 6631726548237356822}
-  estaAtaque: 0
   audioClip:
   - {fileID: 8300000, guid: 9b14336b47ecd8b4aad0f17677cac0b0, type: 3}
   - {fileID: 8300000, guid: 809eaca06c02acc41ad89dd28462415d, type: 3}
@@ -181,10 +182,7 @@ MonoBehaviour:
   checaChao:
     serializedVersion: 2
     m_Bits: 8
-  inimigoAereo: {fileID: 2645898575674789440, guid: 1b7d6d2e1ca8b3348900831409d4b11d, type: 3}
   jardelas: {fileID: 3585296656783278773, guid: ce759732f7b821242b5df05ef90a0e8d, type: 3}
-  patrulha: {fileID: 1533343115678158740, guid: ddc2b209d61ff7e4c8ed2b5a6488ffea, type: 3}
-  bala: {fileID: 0}
 --- !u!70 &2333134718537484571
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -350,7 +348,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5249565810967744034}
-  - component: {fileID: 3626649572561945713}
   - component: {fileID: 5765048924863443151}
   m_Layer: 0
   m_Name: Bico
@@ -374,19 +371,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 5922989960208759154}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3626649572561945713
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6631726548237356822}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ab9af7b2fecb9c0408f8c117a39d6419, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  danoJogador: -50
 --- !u!70 &5765048924863443151
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

@@ -5,39 +5,73 @@ using UnityEngine;
 public class Maconha : MonoBehaviour
 {
     Animator animator;
+
+    [Header("Movimento da Bala Principal")]
+    public float velocidade;
     public float tempoExplosao;
     private float contabilizadorExplosao;
+
+    [Header("Fragmentação")]
     public Transform[] posicaoFragmentosMaconha;
     public GameObject[] fragmentosMaconha;
+    public Vector2[] direcoesFragmentos; // <- direções de cada fragmento
+    public float velocidadeFragmento = 8f;
+
+    public float dano;
+
+    private bool jaExplodiu = false;
+
     void Start()
     {
-       animator=GetComponent<Animator>();
+        animator = GetComponent<Animator>();
     }
 
     void Update()
     {
-        contabilizadorExplosao+=Time.deltaTime;
-        if(tempoExplosao>=contabilizadorExplosao)
+        transform.position += -transform.right * velocidade * Time.deltaTime;
+
+        contabilizadorExplosao += Time.deltaTime;
+
+        if (!jaExplodiu && contabilizadorExplosao >= tempoExplosao)
         {
-             StartCoroutine(Explosao());
+            StartCoroutine(Explosao());
         }
     }
+
     void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.CompareTag("Player"))
+        if (!jaExplodiu && collision.CompareTag("Player"))
         {
-         StartCoroutine(Explosao());
+            StartCoroutine(Explosao());
         }
     }
-    private IEnumerator Explosao()
+
+   private IEnumerator Explosao()
+{
+    jaExplodiu = true;
+
+    animator.Play("Explosao");
+
+    yield return new WaitForSeconds(2);
+
+    for (int i = 0; i < posicaoFragmentosMaconha.Length; i++)
     {
-        animator.Play("Explosao");
-        yield return new WaitForSeconds(2);
-        for (int i = 0; i<posicaoFragmentosMaconha.Length;i++)
+        GameObject frag = Instantiate(
+            fragmentosMaconha[i],
+            posicaoFragmentosMaconha[i].position,
+            Quaternion.identity
+        );
+
+        DanoMaconha script = frag.GetComponent<DanoMaconha>();
+
+        if (script != null)
         {
-            Instantiate(fragmentosMaconha[i],posicaoFragmentosMaconha[i].position,Quaternion.identity);
+            script.velocidade = velocidadeFragmento;
+            script.SetDirecao(direcoesFragmentos[i]);
         }
-        Destroy(gameObject);
-        
     }
+
+    Destroy(gameObject);
+}
+
 }

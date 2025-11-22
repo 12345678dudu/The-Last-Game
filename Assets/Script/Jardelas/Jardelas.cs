@@ -59,6 +59,7 @@ public class Jardelas : MonoBehaviour
         Moviment();
         FaseTwo();
         Morreu();
+        Atirar();
     }
 
     void FixedUpdate()
@@ -132,19 +133,20 @@ public class Jardelas : MonoBehaviour
                     Limite.SetActive(true);
                     Virar();
                 }
-                if (estaAndando) correndo.SetActive(true);
+                if (estaAndando)correndo.SetActive(true);
             }
-              if (!estaAndando) correndo.SetActive(false);
+            if (!estaAndando) correndo.SetActive(false);
         }
     }
     void Atirar()
     {
-        if(tempoCorrida <= tempoCorridaVariavel)
+        if (tempoCorrida <= tempoCorridaVariavel)
         {
-            contabilizadorBala+=Time.deltaTime;
-            if(tempoBala>=contabilizadorBala)
+            contabilizadorBala += Time.deltaTime;
+            if (tempoBala <= contabilizadorBala)
             {
-                  Instantiate(maconha,posicao.position, Quaternion.identity);
+                Instantiate(maconha, posicao.position, Quaternion.identity);
+                contabilizadorBala = 0;
             }
         }
     }
@@ -167,7 +169,7 @@ public class Jardelas : MonoBehaviour
             tempoCorrida = 0;
         }
 
-        if (coll.CompareTag("Player"))
+        if (coll.CompareTag("Player")&&!estaAndando)
         {
             HudInimigo.vidaPerdidas += jogador.danoJogador;
         }
@@ -206,7 +208,7 @@ public class Jardelas : MonoBehaviour
         if (faseTwo)
         {
 
-            
+
         }
     }
     void Morreu()

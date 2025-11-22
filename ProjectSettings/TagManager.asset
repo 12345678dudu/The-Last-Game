@@ -18,6 +18,9 @@ TagManager:
   - Vitoria
   - BalaAerea
   - Armadilha
+  - Patrulha
+  - Maconha
+  - Fragmento
   layers:
   - Default
   - TransparentFX
