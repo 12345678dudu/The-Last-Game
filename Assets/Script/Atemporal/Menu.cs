@@ -11,7 +11,7 @@ public class Menu : MonoBehaviour
     public GameObject vitoria;
     public GameObject hud;
     private bool onGameOver = false;
-    private bool onVitoria = false;
+    public bool onVitoria = false;
     private bool onHud;
     private bool onPause = false;
     void Start()
@@ -19,7 +19,7 @@ public class Menu : MonoBehaviour
         Time.timeScale = 1;
         button[0].onClick.AddListener(Voltar);
         button[1].onClick.AddListener(Recomecar);
-        button[2].onClick.AddListener(Recomecar);
+        button[2].onClick.AddListener(Continuar);
     }
     void Update()
     {
@@ -55,6 +55,8 @@ public class Menu : MonoBehaviour
             onVitoria = true;
             onHud = false;
             Time.timeScale = 0; 
+             PlayerPrefs.SetInt("GanhouPlataforma", 1);
+    PlayerPrefs.Save();
         }
         if (Vida.vidaPerdida <= 0)
         {
@@ -67,6 +69,11 @@ public class Menu : MonoBehaviour
         onHud = false;
         Time.timeScale = 0;
     }
+    void Continuar()
+        {
+        SceneManager.LoadScene("CidadePrincipal");
+    }
+    
     IEnumerator MorreuAnimacao()
     {
         yield return new WaitForSeconds(1.53f);

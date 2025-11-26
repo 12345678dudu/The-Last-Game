@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 7326879750753388928}
   - component: {fileID: 2464296088571192750}
   - component: {fileID: 7196956326886885584}
-  - component: {fileID: 4976888798827654695}
   - component: {fileID: 2036220913486167924}
+  - component: {fileID: 256015000534189480}
   m_Layer: 0
   m_Name: Choques
   m_TagString: Choque
@@ -115,8 +115,23 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!60 &4976888798827654695
-PolygonCollider2D:
+--- !u!114 &2036220913486167924
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4344061408107679306}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7de862a5f04b23248a90c18c86eb4182, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Bala
+  speed: 5
+  dano: -40
+  bala: {fileID: 0}
+--- !u!61 &256015000534189480
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -159,53 +174,5 @@ PolygonCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: 0.035, y: -0.585}
-      - {x: 0.035, y: -0.635}
-      - {x: 0.105, y: -0.635}
-      - {x: 0.105, y: -0.585}
-      - {x: 0.085, y: -0.565}
-      - {x: 0.055, y: -0.565}
-    - - {x: 0.155, y: -0.024999999}
-      - {x: 0.185, y: 0.035}
-      - {x: 0.185, y: 0.114999995}
-      - {x: 0.175, y: 0.13499999}
-      - {x: 0.035, y: 0.125}
-      - {x: 0.105, y: 0.385}
-      - {x: 0.16499999, y: 0.48499998}
-      - {x: 0.155, y: 0.585}
-      - {x: 0.13499999, y: 0.635}
-      - {x: 0.095, y: 0.635}
-      - {x: 0.074999996, y: 0.615}
-      - {x: -0.035, y: 0.355}
-      - {x: -0.074999996, y: 0.275}
-      - {x: -0.195, y: 0.005}
-      - {x: -0.195, y: -0.024999999}
-      - {x: -0.175, y: -0.044999998}
-      - {x: -0.074999996, y: -0.125}
-      - {x: -0.13499999, y: -0.24499999}
-      - {x: -0.155, y: -0.385}
-      - {x: -0.195, y: -0.515}
-      - {x: -0.195, y: -0.615}
-      - {x: -0.175, y: -0.625}
-      - {x: -0.125, y: -0.625}
-      - {x: -0.085, y: -0.505}
-      - {x: 0.035, y: -0.255}
-      - {x: 0.105, y: -0.074999996}
-  m_UseDelaunayMesh: 0
---- !u!114 &2036220913486167924
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4344061408107679306}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7de862a5f04b23248a90c18c86eb4182, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Bala
-  speed: 5
-  dano: -40
-  bala: {fileID: 0}
+  m_Size: {x: 0.39, y: 1.27}
+  m_EdgeRadius: 0

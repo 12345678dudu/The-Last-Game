@@ -6,8 +6,26 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 8c9cfa26abfee488c85f1582747f6a02
+    path: Assets/Scenes/Menu.unity
+    guid: 7053737bfe21fd54c8195d5dc2c2d549
+  - enabled: 1
+    path: Assets/Scenes/CidadePrincipal.unity
+    guid: 1a0d1a9858c719e4095e86be888b9eac
+  - enabled: 1
+    path: "Assets/Scenes/Explica\xE7\xE3oJardelas.unity"
+    guid: 9e04abcf907d7c34bb6e7edfd01eaf35
+  - enabled: 1
+    path: Assets/Scenes/Jardelas.unity
+    guid: b321884589d4ff04981bfa20fae78ea2
+  - enabled: 1
+    path: "Assets/Scenes/Explica\xE7\xE3oKershek.unity"
+    guid: 507eaffd0a55c244b948601dcde6e3d3
+  - enabled: 1
+    path: Assets/Scenes/KershekOriginal.unity
+    guid: 3c2a1589d0a236c4c94f7d2dd10c99ea
+  - enabled: 1
+    path: Assets/Scenes/Atemporal.unity
+    guid: 5c833fa263d95ac46a0078bc7b45132b
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

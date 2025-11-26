@@ -3421,6 +3421,7 @@ MonoBehaviour:
   gameOver: {fileID: 1669197421}
   vitoria: {fileID: 985121583}
   hud: {fileID: 970140792}
+  onVitoria: 0
 --- !u!1 &2065970749
 GameObject:
   m_ObjectHideFlags: 0

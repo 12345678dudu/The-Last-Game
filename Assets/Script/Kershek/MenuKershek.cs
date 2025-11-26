@@ -73,6 +73,8 @@ public class MenuKershek : MonoBehaviour
             onVitoria = true;
             onHud = false;
             Time.timeScale = 0; 
+             PlayerPrefs.SetInt("GanhouPlataformaKershek", 1);
+    PlayerPrefs.Save();
         }
     }
 }
